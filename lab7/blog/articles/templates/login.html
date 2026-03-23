@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Public Blog - авторизация</title>
+    <link rel="stylesheet" href="{% static 'articles/css/article.css' %}">
+</head>
+<body class="create-post-page">
+    <div class="header">
+        <img src="{% static 'articles/img/dpb-logo.png' %}" />
+    </div>
+
+    <div class="create-post">
+        <h1>Авторизация</h1>
+        <form method="POST">{% csrf_token %}
+            <input type="text" name="username" placeholder="Имя пользователя" value="{{ form.username }}">
+            <input type="password" name="password" placeholder="Пароль">
+            <input type="submit" value="Войти">
+        </form>
+        {{ form.errors }}
+        <p><a href="/">Все записи</a></p>
+    </div>
+</body>
+</html>
