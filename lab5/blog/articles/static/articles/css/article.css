@@ -1,0 +1,112 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title a {
+    color: #ffffff;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+}
+
+.article {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article h1 {
+    text-align: center;
+}
+
+.article-text {
+    margin-top: 20px;
+}
+
+.article a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+body.create-post-page {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.create-post {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.create-post h1 {
+    text-align: center;
+}
+
+.create-post form {
+    margin-top: 30px;
+}
+
+.create-post form input[type="text"],
+.create-post form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+.create-post form textarea {
+    min-height: 220px;
+    resize: vertical;
+}
+
+.create-post form input[type="submit"] {
+    display: inline-block;
+    padding: 10px 24px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.create-post a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.create-post a:hover {
+    text-decoration: underline;
+}
+
+.create-post form input[type="submit"]:hover {
+    opacity: 0.9;
+}
