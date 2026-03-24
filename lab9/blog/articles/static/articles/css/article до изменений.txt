@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Общие контейнеры старых страниц */
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #96DACD;
+}
+
+.archive-posts {
+    background: #96DACD;
+    width: 100%;
+    margin: 0;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.article {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article h1 {
+    text-align: center;
+}
+
+.article-text {
+    margin-top: 20px;
+    color: #124d45;
+}
+
+.article a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+/* Формы */
+body.create-post-page {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.create-post {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.create-post h1 {
+    text-align: center;
+}
+
+.create-post form {
+    margin-top: 30px;
+}
+
+.create-post form input[type="text"],
+.create-post form input[type="password"],
+.create-post form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+.create-post form textarea {
+    min-height: 220px;
+    resize: vertical;
+}
+
+.create-post form input[type="submit"] {
+    display: inline-block;
+    padding: 10px 24px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.create-post a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.create-post a:hover {
+    text-decoration: underline;
+}
+
+.create-post form input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* Старые верхние ссылки */
+.top-links {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.top-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-links a:hover {
+    text-decoration: underline;
+}
+
+/* Посты */
+.one-post {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.post-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-title {
+    margin: 0;
+}
+
+.post-title a {
+    color: #045747;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    color: #124d45;
+}
+
+.article-created-date {
+    text-align: right;
+    color: #124d45;
+}
+
+.fold-button {
+    background: none;
+    border: none;
+    color: #124d45;
+    text-decoration: underline;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+
+.fold-button:hover {
+    text-decoration: underline;
+}
+
+.one-post.folded .article-author {
+    display: none;
+}
+
+.one-post.folded .article-created-date {
+    display: none;
+}
+
+.one-post.folded .article-text {
+    display: none;
+}
+
+.one-post-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Общий логотип для остальных страниц */
+.logo {
+    display: block;
+    width: 318px;
+    margin: 0 auto;
+}
+
+/* =========================
+   Стили главной страницы lab9
+   ========================= */
+
+body.archive {
+    background: #96DACD;
+    color: #045747;
+}
+
+body.archive .header {
+    width: 100%;
+    background: #d7ebe7;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 40px 25px 30px 25px;
+}
+
+body.archive .logo {
+    display: block;
+    width: 400px;
+    margin: 0 auto 30px auto;
+    position: relative;
+}
+
+body.archive .header-text-area {
+    float: left;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 70px;
+}
+
+body.archive .service-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 0 110px 0;
+    color: #0d5c52;
+    line-height: 1.1;
+}
+
+body.archive .register-link {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+body.archive .login-link {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1abc9c;
+    text-decoration: underline;
+    margin-left: 140px;
+}
+
+body.archive .icons-for-parallax {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    height: 530px;
+    position: relative;
+    float: right;
+    width: 380px;
+}
+
+body.archive .icons-for-parallax img {
+    position: absolute;
+    top: 0;
+}
+
+body.archive .icon-for-parallax-first {
+    width: 200px;
+    margin-top: 200px;
+    margin-left: 0;
+    z-index: 3;
+}
+
+body.archive .icon-for-parallax-second {
+    width: 175px;
+    margin-top: 100px;
+    margin-left: 80px;
+    z-index: 2;
+}
+
+body.archive .icon-for-parallax-third {
+    width: 150px;
+    margin-top: 0;
+    margin-left: 160px;
+    z-index: 1;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin: 0 auto;
+}
+
+body.archive .logo {
+    display: block;
+    width: 400px;
+    margin: 0 auto 30px auto;
+    position: relative;
+}
